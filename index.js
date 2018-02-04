@@ -1,10 +1,13 @@
 var word = require('./word.js');
 var inquirer = require('inquirer');
+
+// Soccer teams
 var words = ['juventus', 'barcelona', 'napoli', 'bayern', 'dortmund', 'chelsea']
-var attempts = ;
+var attempts = 0;
 
 // Function to start the game
 function start () {
+  attempts = 15;
   inquirer.prompt([
     {
       name: "input",
@@ -12,7 +15,8 @@ function start () {
       message: "Guess a letter"
     }
   ]).then(ans => {
-    console.log(ans.input);
+
+    // console.log(ans.input);
 });
 }
 // End of start Function
