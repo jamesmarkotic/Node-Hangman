@@ -14,6 +14,7 @@ function Letter (letter) {
     }
     return this.uScore;
   };
+  // this.check();
   this.correct = function (character) {
     if (character == this.letter) {
       this.guessed = true;
@@ -22,11 +23,14 @@ function Letter (letter) {
 
 }
 // End of Letter constructor
+module.exports = Letter;
+
+// Pseudocoing of whats left to do
+// Unsure if certain aspects of letter.js work or not.
+// Having trouble testing whether is fully works or not.
 
 // Testing     _ _ _ _ z
 // var test = new Letter ('z', false);
 //
 // console.log(test.guessed);
 // console.log(test.uScore);
-
-module.exports = Letter;

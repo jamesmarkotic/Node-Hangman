@@ -21,6 +21,8 @@ function start () {
 }
 // End of start Function
 
-
 // Calling start function to start game
 start();
+
+// Pseudocoing of whats left to do
+// Got stuck on how letter/word work together and unsure of how to proceed.
